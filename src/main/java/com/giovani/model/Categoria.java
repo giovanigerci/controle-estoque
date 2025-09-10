@@ -1,14 +1,17 @@
 package com.giovani.model;
 
+import com.giovani.model.enums.TipoEmbalagem;
+import com.giovani.model.enums.Tamanho;
+
 public class Categoria {
     private int id;
     private String nome;
-    private String tamanho;
-    private String embalagem;
+    private Tamanho tamanho;
+    private TipoEmbalagem embalagem;
 
     public Categoria(){
     }
-    public Categoria(int id, String nome, String tamanho, String embalagem){
+    public Categoria(int id, String nome, Tamanho tamanho, TipoEmbalagem embalagem){
         this.id = id;
         this.nome = nome;
         this.tamanho = tamanho;
@@ -27,16 +30,16 @@ public class Categoria {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getTamanho() {
+    public Tamanho getTamanho() {
         return tamanho;
     }
-    public void setTamanho(String tamanho) {
+    public void setTamanho(Tamanho tamanho) {
         this.tamanho = tamanho;
     }
-    public String getEmbalagem() {
+    public TipoEmbalagem getEmbalagem() {
         return embalagem;
     }
-    public void setEmbalagem(String embalagem) {
+    public void setEmbalagem(TipoEmbalagem embalagem) {
         this.embalagem = embalagem;
     }
 
